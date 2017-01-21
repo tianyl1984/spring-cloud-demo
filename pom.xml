@@ -46,5 +46,6 @@
 		<module>eureka-server</module>
 		<module>service1</module>
 		<module>client1</module>
+		<module>feign_client</module>
 	</modules>
 </project>
