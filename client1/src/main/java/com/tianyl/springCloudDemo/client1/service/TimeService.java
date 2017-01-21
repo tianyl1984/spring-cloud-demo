@@ -14,7 +14,7 @@ public class TimeService {
 
 	@HystrixCommand(fallbackMethod = "callFail")
 	public String time() {
-		return restTemplate.getForEntity("http://SERVICE1/time", String.class).getBody();
+		return restTemplate.getForEntity("http://time-service/time", String.class).getBody();
 	}
 
 	public String callFail() {
